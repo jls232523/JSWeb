@@ -1,0 +1,38 @@
+body{
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  color: white;
+}
+
+html{
+  background-image: url("bwlaptop.jpg");background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+#options{
+  text-align: center;
+}
+#opentext{
+  text-align: center;
+  font-size: 300%;
+  letter-spacing: .2em;
+}
+div.link{
+  text-align: left;
+  color: black;
+}
+div.topbar{
+  color:white;
+  margin-bottom: 60em;
+}
+a:link{
+  text-decoration: none;
+  font-size: 125%;
+  color: white;
+  letter-spacing: .1em;
+}
+a:visited{
+  color: white;
+}
