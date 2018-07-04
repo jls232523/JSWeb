@@ -1,38 +1,76 @@
+*{
+  margin 0;
+  padding 0;
+}
 body{
   font-family: 'FantasqueSansMonoRegular';
   font-weight: normal;
   font-style: normal;
   text-align: left;
-  color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-  background-image: url("bwlaptop.jpg");background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-}
-#options{
-  text-align: center;
-}
-#opentext{
-  text-align: center;
-  font-size: 300%;
-  letter-spacing: .2em;
-}
-div.link{
-  text-align: left;
-  color: black;
-}
-div.topbar{
+.statement{
+  position:absolute;
+  top:50%;
+  left:50%
+  transform:translate(-50%,-50%);
+  margin-left: 60px;
   color:white;
-  margin-bottom: 60em;
 }
-a:link{
+
+.row{
+  margin: 0 auto;
+}
+.nav{
+  float:right;
+  list-style: none;
+  margin-top: 60px;
+  margin-right: 20px
+}
+.nav li{
+  display: inline-block;
+  margin-left: 20px;
+}
+.nav li a{
+  color: white;
   text-decoration: none;
-  font-size: 125%;
-  color: white;
-  letter-spacing: .1em;
+  font-size:90%;
+  font-weight: bold;
 }
-a:visited{
-  color: white;
+.nav li a:hover{
+  color:rgb(43, 9, 87);
+  border-bottom: 2px solid rgb(43,9,87);
+  transition: all 0.5s ease-in;
+  padding: 5px;
+}
+.logo img{
+  height: auto;
+  float: left;
+  margin-top: 40px;
+  width: 200px;
+  padding-left: 20px;
+}
+
+header {
+   height: 50vh;
+   background-color: gold;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+.wordlist{
+  list-style: none;
+}
+#openStatement{
+  text-align: center;
+  position: relative;
+  color:black;
+}
+.adj{
+  color:white;
+}
+.active{
+  color:black;
 }
