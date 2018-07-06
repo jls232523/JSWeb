@@ -75,3 +75,51 @@ function wait5(){
   element.removeChild(element.childNodes[0]);
   element.appendChild(para);
 }
+$(function(){
+$('.info').each(function(){
+  var controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement:this.children[0],triggerHook: 0
+  })
+  .setClassToggle(this,'show')
+  .addIndicators()
+  .addTo(controller);
+  });
+});
+
+/*$(function(){
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+  triggerElement:'#openStatement',duration: '90%',triggerHook: 0
+})
+.setClassToggle('.About','show')
+.addIndicators()
+.addTo(controller);
+});
+$(function(){
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+  triggerElement:'.About p ',duration: '150%',triggerHook: 0
+})
+.setClassToggle('.Resume','show')
+.addIndicators()
+.addTo(controller);
+});
+$(function(){
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+  triggerElement:'.Resume p',duration: '90%',triggerHook: 0
+})
+.setClassToggle('.Projects','show')
+.addIndicators()
+.addTo(controller);
+});
+$(function(){
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+  triggerElement:'.Projects p',duration: '90%',triggerHook: 0
+})
+.setClassToggle('.Contact','show')
+.addIndicators()
+.addTo(controller);
+});*/
