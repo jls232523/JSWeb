@@ -1,10 +1,10 @@
 $(function(){
   $("#signature").hover(
              function() {
-                 $(this).attr("src", "images/singaturecolor.gif");
+                 $(this).attr("src", "images/signature.gif");
              },
              function() {
-                 $(this).attr("src", "images/sigcolor.png");
+                 $(this).attr("src", "images/signature.png");
              }
          );
 $(".statement").css
