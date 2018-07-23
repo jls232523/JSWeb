@@ -1,10 +1,10 @@
 $(function(){
   $("#signature").hover(
              function() {
-                 $(this).attr("src", "images/signature.gif");
+                 $(this).attr("src", "images/brownsig.gif");
              },
              function() {
-                 $(this).attr("src", "images/signature.png");
+                 $(this).attr("src", "images/brownsig.png");
              }
          );
 $(".statement").css
@@ -77,7 +77,7 @@ function wait5(){
 }
 $(function(){
 $('.info').each(function(){
-  var controller = new ScrollMagic.Controller();
+  var controller = new ScrollMagic.Controller({container:document});
   var scene = new ScrollMagic.Scene({
     triggerElement:this.children[0],triggerHook: 0
   })
